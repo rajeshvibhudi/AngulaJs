@@ -6,11 +6,20 @@
 </head>
 <body>
 <div ng-app="">
+    <!--  binding   -->
     <input type="text" ng-model="data.message">
     <h1>{{data.message  +"world"}}</h1>
+    <!-- controller-->
+<div ng-controller="FirstCtrl">
+    <h1>{{data.message + " world"}}</h1>
+    <div class="{{data.message}}">
+        Wrap me in a foundation component
+    </div>
 
+</div>
 
 </div>
 <script type="text/javascript" src="../js/angular.min.js"></script>
+<script src="../js/ajctrl.js"></script>
 </body>
 </html>
